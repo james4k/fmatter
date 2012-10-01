@@ -1,4 +1,4 @@
-// fmatter is a simple YAML Front Matter parser, using the
+// Package fmatter is a simple YAML Front Matter parser, using the
 // launchpad.net/goyaml package.
 package fmatter
 
@@ -11,7 +11,9 @@ import (
 	"unicode"
 )
 
-// ReadFile read an entire file into memory, and calls Read which parses the front matter data and returns the remaining file contents.
+// ReadFile read an entire file into memory, and calls Read which
+// parses the front matter data and returns the remaining file
+// contents.
 func ReadFile(filename string, frontmatter interface{}) (content []byte, err error) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -20,8 +22,10 @@ func ReadFile(filename string, frontmatter interface{}) (content []byte, err err
 	return Read(data, frontmatter)
 }
 
-// Read detects and parses the front matter data, and returns the remaining contents. If no front matter is found, the entire file contents are returned.
-// For details on the frontmatter output, please see the launchpad.net/goyaml package.
+// Read detects and parses the front matter data, and returns the
+// remaining contents. If no front matter is found, the entire
+// file contents are returned. For details on the frontmatter
+// parameter, please see the launchpad.net/goyaml package.
 func Read(data []byte, frontmatter interface{}) (content []byte, err error) {
 	r := bytes.NewBuffer(data)
 

@@ -2,8 +2,19 @@ package fmatter
 
 import (
 	"bytes"
+	"fmt"
 	"testing"
 )
+
+func ExampleRead() {
+	data := []byte(`---
+title: Some Title
+---
+content`)
+
+	var frontmatter struct{ Title string }
+	content, err := Read(data, &frontmatter)
+}
 
 // TODO: test a few expected errors
 
@@ -41,4 +52,3 @@ func TestItems(t *testing.T) {
 		}
 	}
 }
-

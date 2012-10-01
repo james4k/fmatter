@@ -13,7 +13,8 @@ title: Some Title
 content`)
 
 	var frontmatter struct{ Title string }
-	content, err := Read(data, &frontmatter)
+	content, _ := Read(data, &frontmatter)
+	fmt.Println(content)
 }
 
 // TODO: test a few expected errors

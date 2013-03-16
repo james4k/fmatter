@@ -25,14 +25,14 @@ type testItem struct {
 }
 
 var testItems = []testItem{
-	testItem{[]byte(`---
+	{[]byte(`---
 frontmatter: simple
 ---
 content`),
 		[]byte(`content`)},
-	testItem{[]byte(`  content`),
+	{[]byte(`  content`),
 		[]byte(`  content`)},
-	testItem{[]byte(`---
+	{[]byte(`---
 content`),
 		[]byte(`---
 content`)},

@@ -8,6 +8,3 @@ A simple YAML Front Matter parser, using the [launchpad.net/goyaml](http://go.pk
 
 New to Go? Have a look at how [import paths work](http://golang.org/doc/code.html#remote).
 
-## License
-
-MIT

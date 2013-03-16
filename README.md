@@ -2,7 +2,7 @@
 
 A simple YAML Front Matter parser, using the [launchpad.net/goyaml](http://godoc.org/launchpad.net/goyaml) package. View the godoc documentation [here](http://godoc.org/github.com/james4k/fmatter).
 
-For a cgo-free alternative, use the [TOML variant](http://github.com/james4k/fmatter/toml).
+For a cgo-free alternative, use the [TOML variant](http://godoc.org/github.com/james4k/fmatter/toml).
 
 ## Installation
 

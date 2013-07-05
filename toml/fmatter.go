@@ -1,5 +1,7 @@
 // Package fmatter is a TOML Front Matter parser, using the
 // github.com/BurntSushi/toml package.
+//
+// DEPRECATED. This was a terrible idea.
 package fmatter
 
 import (
